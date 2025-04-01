@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Handwriting to Font Generator</h1>
+        
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span> Dark Mode
+        </label>
+
+        <form id="fontForm" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/png, image/jpeg" required />
+            <button type="submit">Generate Font</button>
+        </form>
+        <div id="preview">Preview of your font will appear here</div>
+        <a id="downloadLink" href="" download style="display: none;">Download your font</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
